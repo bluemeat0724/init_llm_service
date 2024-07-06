@@ -1,0 +1,50 @@
+[providers]
+names = ['openai', 'moon', 'qwen', 'zhipu', 'yi', 'step', 'azure', 'intern','ollama']
+
+[openai]
+doc_url='https://platform.openai.com/docs/overview'
+models = ['gpt-4o', 'gpt-4-turbo', 'gpt-3.5-turbo']
+embeddings = ['text-embedding-3-small', 'text-embedding-3-large']
+
+[moon]
+doc_url='https://platform.moonshot.cn/docs'
+models = ['moonshot-v1-8k', 'moonshot-v1-32k', 'moonshot-v1-128k']
+base_url = 'https://api.moonshot.cn/v1'
+
+[qwen]
+doc_url='https://help.aliyun.com/zh/dashscope/?spm=a2c4g.11186623.0.0.4780fa701KqDuP'
+models = ['qwen-max', 'qwen-max-longcontext', 'qwen-vl-max', 'qwen-vl-plus', 'qwen2-72b-instruct', 'qwen1.5-72b-chat']
+embeddings = ['text-embedding-v2']
+base_url = 'https://dashscope.aliyuncs.com/compatible-mode/v1'
+
+[zhipu]
+doc_url='https://maas.aminer.cn/dev/api'
+models = ['glm-4', 'glm-4-0520', 'glm-4-air', 'glm-4v']
+embeddings = ['embedding-2']
+base_url = 'https://open.bigmodel.cn/api/paas/v4/'
+
+[yi]
+doc_url= 'https://platform.lingyiwanwu.com/docs'
+models = ['yi-large', 'yi-large-rag', 'yi-large-turbo', 'yi-version', 'yi-medium']
+base_url = 'https://api.lingyiwanwu.com/v1'
+
+[step]
+doc_url='https://platform.stepfun.com/docs/overview/concept'
+models = ['step-1-8k', 'step-1v-8k', 'step-1v-32k', 'step-1-32k', 'step-1-128k', 'step-256k']
+base_url = "https://api.stepfun.com/v1"
+
+[azure]
+doc_url=''
+models = ['gpt4o']
+api_version = '2024-02-15-preview'
+base_url = 'https://pygaiservice.openai.azure.com/'
+
+[intern]
+doc_url='https://internlm.intern-ai.org.cn/api/document'
+models = ['internlm2-latest']
+base_url = "https://internlm-chat.intern-ai.org.cn/puyu/api/v1/"
+
+[ollama]
+doc_url='https://internlm.intern-ai.org.cn/api/document'
+models = ['qwen:14b-chat','qwen2:7b-instruct-q8_0']
+base_url = "http://localhost:11434/v1"
