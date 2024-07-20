@@ -1,9 +1,9 @@
 [providers]
-names = ['openai', 'moon', 'qwen', 'zhipu', 'yi', 'step', 'azure', 'intern','ollama']
+names = ['openai', 'moon', 'qwen', 'zhipu', 'yi', 'step', 'azure', 'intern','ollama','deepseek']
 
 [openai]
 doc_url='https://platform.openai.com/docs/overview'
-models = ['gpt-4o', 'gpt-4-turbo', 'gpt-3.5-turbo']
+models = ['gpt-4o-mini','gpt-4o', 'gpt-4-turbo', 'gpt-3.5-turbo']
 embeddings = ['text-embedding-3-small', 'text-embedding-3-large']
 
 [moon]
@@ -46,5 +46,19 @@ base_url = "https://internlm-chat.intern-ai.org.cn/puyu/api/v1/"
 
 [ollama]
 doc_url='https://internlm.intern-ai.org.cn/api/document'
-models = ['qwen:14b-chat','qwen2:7b-instruct-q8_0']
+models = ['qwen:14b-chat','qwen2:7b-instruct-q8_0','gemma2:9b-instruct-q8_0']
 base_url = "http://localhost:11434/v1"
+
+[silicon]
+doc_url='https://docs.siliconflow.cn/docs/getting-started'
+models = ['Qwen/Qwen2-72B-Instruct','google/gemma-2-27b-it','deepseek-ai/DeepSeek-V2-Chat','01-ai/Yi-1.5-34B-Chat-16K','deepseek-ai/DeepSeek-V2-Chat']
+base_url='https://api.siliconflow.cn/v1'
+
+[deepseek]
+doc_url='https://platform.deepseek.com/api-docs/zh-cn/'
+models = ['deepseek-chat','deepseek-coder']
+base_url='https://api.deepseek.com'
+
+[deepbricks]
+doc_url='https://deepbricks.ai/docs'
+base_url='https://api.deepbricks.ai/v1'
